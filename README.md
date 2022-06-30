@@ -5,7 +5,7 @@ The current default version of imagemagick installed on heroku:22 dynos is a ver
 
 This [Heroku buildpack](https://devcenter.heroku.com/articles/buildpacks) vendors a version of ImageMagick with **WEBP and HEIF support** binaries into your project.
 
-This one works was built for [**Heroku stack 20**](https://devcenter.heroku.com/articles/stack).
+This one works was built for [**Heroku stack 22**](https://devcenter.heroku.com/articles/stack).
 
 The tar file in the [/build folder](./build) currently contains:
 
@@ -20,7 +20,7 @@ You will need to build a new binary if you want to use a newer or different vers
 From your projects "Settings" tab add this buildpack to your app in the 1st position:
 
 ```bash
-https://github.com/yespark/heroku-imagemagick-buildpack
+https://github.com/aredotna/heroku-imagemagick-buildpack
 ```
 
 **NOTE:** \__To ensure the newer version of imagemagick is found in the $PATH and installed first make sure this buildpack is added to the top of the buildpack list or at "index 1"._
